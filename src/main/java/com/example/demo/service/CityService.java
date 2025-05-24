@@ -9,7 +9,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -32,13 +31,15 @@ public class CityService {
             reader.readLine();
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
-                if (parts.length == 5) {
+                if (parts.length == 7) {
                     cities.add(new CityInfo(
                             parts[0],
                             parts[1],
                             Double.parseDouble(parts[2]),
                             Double.parseDouble(parts[3]),
                             parts[4],
+                            parts[5],
+                            parts[6],
                             null,
                             null,
                             null
@@ -52,6 +53,17 @@ public class CityService {
 
     public List<CityInfo> getAllCities() {
         return getCitiesWithTime(cities);
+    }
+
+    public List<CityInfo> searchCities(String query) {
+        List<CityInfo> cities = new ArrayList<>();
+        CityInfo city = getCityByName(query);
+        if (city != null) cities.add(city);
+        List<CityInfo> cities1 = getCitiesByCountry(query);
+        if (cities1 != null) cities.addAll(cities1);
+        List<CityInfo> cities2 = getCitiesByTimezone(query);
+        if (cities2 != null) cities.addAll(cities2);
+        return cities;
     }
 
     public CityInfo getCityByName(String name) {

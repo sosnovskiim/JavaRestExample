@@ -13,6 +13,8 @@ public class CityInfo {
     private double latitude;
     private double longitude;
     private String timezone;
+    private String population;
+    private String imageUrl;
     private String localTime;
     private String utcTime;
     private String timeDescription;

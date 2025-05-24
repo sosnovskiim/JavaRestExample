@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${city.name} + ' | Информация'"></title>
+    <link th:href="@{/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${city.name}"></h1>
+        <img th:src="${city.imageUrl}" width="300">
+        <p>Страна: <span th:text="${city.country}"></span></p>
+        <p>Население: <span th:text="${city.population}"></span></p>
+        <p>Координаты: <span th:text="${city.latitude}"></span>, <span th:text="${city.longitude}"></span></p>
+        <p>Часовой пояс: <span th:text="${city.timezone}"></span></p>
+        <p><span th:text="${city.timeDescription}"></span></p>
+        <a th:href="@{/}">На главную</a>
+    </div>
+</body>
+</html>

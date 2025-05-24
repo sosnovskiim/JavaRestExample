@@ -1,6 +1,6 @@
-City,Country,Latitude,Longitude,Timezone
-Moscow,Russia,55.7558,37.6176,Europe/Moscow
-New York,USA,40.7128,-74.0060,America/New_York
-Tokyo,Japan,35.6895,139.6917,Asia/Tokyo
-Paris,France,48.8566,2.3522,Europe/Paris
-Sydney,Australia,-33.8688,151.2093,Australia/Sydney
+City,Country,Latitude,Longitude,Timezone,Population,Image
+Moscow,Russia,55.7558,37.6176,Europe/Moscow,13.3m,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Moscow_July_2011-16.jpg/1920px-Moscow_July_2011-16.jpg
+New York,USA,40.7128,-74.0060,America/New_York,7.9m,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/1280px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg
+Tokyo,Japan,35.6895,139.6917,Asia/Tokyo,3.7m,https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tokyo_Tower_at_night_8.JPG/1920px-Tokyo_Tower_at_night_8.JPG
+Paris,France,48.8566,2.3522,Europe/Paris,2.3m,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Paris_Night.jpg/1920px-Paris_Night.jpg
+Sydney,Australia,-33.8688,151.2093,Australia/Sydney,5.5m,https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/1920px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg
